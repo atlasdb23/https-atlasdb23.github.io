@@ -112,6 +112,29 @@
       color: #ccc;
       font-style: italic;
     }
+    /* Style pour la section PhotoHub */
+    .photohub-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .photohub-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .photohub-item img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border: 3px solid #00ff00;
+      box-shadow: 0px 0px 20px #00ff00;
+    }
+    .photohub-item b {
+      font-size: 1.5em;
+    }
   </style>
 </head>
 <body>
@@ -121,8 +144,9 @@
   <div class="nav">
     <a href="javascript:void(0);" onclick="showSection('home')">Home of Yoshi</a>
     <a href="javascript:void(0);" onclick="showSection('haxor')">Hall of Haxor</a>
-    <a href="javascript:void(0);" onclick="showSection('yoshibre')">Hall of Yoshibre</a>
+    <a href="javascript:void(0);" onclick="showSection('yoshibre')">Hall of Autism</a>
     <a href="javascript:void(0);" onclick="showSection('about')">Hall of About</a>
+    <a href="javascript:void(0);" onclick="showSection('photohub')">PhotoHub</a>
   </div>
   
   <div class="container" id="home">
@@ -134,9 +158,16 @@
     </div>
   </div>
   
+  <div class="container" id="haxor">
+    <h3>HALL OF HAXOR</h3>
+    <div class="scroll-box">
+      <p>Contenu de la section Hall of Haxor...</p>
+    </div>
+  </div>
+  
   <div class="container" id="yoshibre">
     <h3>HALL OF YOSHIBRE</h3>
-    <!-- Iframe YouTube avec un id pour manipulation -->
+    <!-- Iframe YouTube pour la musique -->
     <iframe id="youtubeIframe" 
             src="" 
             frameborder="0" 
@@ -165,7 +196,22 @@
       <p>Atlas est beau.</p>
     </div>
   </div>
-
+  
+  <!-- Section PhotoHub avec éléments alignés horizontalement -->
+  <div class="container" id="photohub">
+    <h3>PHOTOHUB</h3>
+    <div class="photohub-items">
+      <div class="photohub-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4oJXSlmNvpS6diMbHXG2UAA2e0NYtgkjjw&s" alt="Image PhotoHub 1">
+        <b>Yoshi.exe</b>
+      </div>
+      <div class="photohub-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqEmdTy9AnBXQIPu6MTXX_meqEYCOGlCVCQ&s" alt="Image PhotoHub 2">
+        <b>Yochie</b>
+      </div>
+    </div>
+  </div>
+  
   <script>
     // URL de la musique YouTube avec les paramètres souhaités
     const youtubeURL = "https://www.youtube.com/embed/Tm5UCnb9axw?autoplay=1&controls=0&loop=1&playlist=Tm5UCnb9axw";
