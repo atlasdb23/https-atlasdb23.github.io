@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoshi 1337 DarkWiki</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #050505;
+      color: #00ff00;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+      background-color: #000000;
+      border-bottom: 3px solid #00ff00;
+      box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.5);
+    }
+    .nav a {
+      color: #00ff00;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+      font-size: 1.2em;
+      border: 2px solid transparent;
+    }
+    .nav a:hover {
+      background-color: #00ff00;
+      color: #000000;
+      border: 2px solid #000000;
+      box-shadow: 0px 0px 10px #00ff00;
+    }
+    h1 {
+      margin-top: 20px;
+      text-shadow: 0px 0px 20px #00ff00;
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+    h2 {
+      font-size: 1.8em;
+      text-shadow: 0px 0px 15px #00ff00;
+      margin-bottom: 20px;
+    }
+    .container {
+      margin: 50px auto;
+      width: 80%;
+      max-width: 900px;
+      border: 3px solid #00ff00;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: #0d0d0d;
+      box-shadow: 0px 0px 20px #00ff00;
+      overflow: hidden;
+      display: none; /* Caché par défaut */
+      position: relative;
+    }
+    .scroll-box {
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 15px;
+      border: 2px solid #00ff00;
+      background-color: #191919;
+      border-radius: 8px;
+      text-align: left;
+      box-shadow: inset 0px 0px 10px #00ff00;
+    }
+    /* Style pour les profils de la section Yoshibre */
+    .yoshibre-profiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .yoshibre-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #191919;
+      border-radius: 15px;
+      border: 3px solid #00ff00;
+      padding: 20px;
+      box-shadow: 0px 0px 20px #00ff00;
+      max-width: 300px;
+    }
+    .yoshibre-profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #00ff00;
+      box-shadow: 0px 0px 10px #00ff00;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+    .yoshibre-profile h4 {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+    .yoshibre-profile p {
+      font-size: 1em;
+      color: #ccc;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>YOSHI 1337 DARKWIKI</h1>
+  <h2>"Hacking the Yoshi way..."</h2>
+  
+  <div class="nav">
+    <a href="javascript:void(0);" onclick="showSection('home')">Home of Yoshi</a>
+    <a href="javascript:void(0);" onclick="showSection('haxor')">Hall of Haxor</a>
+    <a href="javascript:void(0);" onclick="showSection('yoshibre')">Hall of Yoshibre</a>
+    <a href="javascript:void(0);" onclick="showSection('about')">Hall of About</a>
+  </div>
+  
+  <div class="container" id="home">
+    <h3>HOME OF YOSHI</h3>
+    <div class="scroll-box">
+      <p>Il était une fois un groupe de Yoshi légendaires qui parcouraient les tréfonds de Discord...</p>
+      <p>Leur but : semer le chaos, hacker les serveurs et devenir les maîtres incontestés des mèmes.</p>
+      <p>Dans l'ombre, un Yoshi 1337 émergea, surpassant tous les autres en troll et en skill. Son nom résonne encore...</p>
+    </div>
+  </div>
+  
+  <div class="container" id="yoshibre">
+    <h3>HALL OF YOSHIBRE</h3>
+    <!-- Iframe YouTube avec un id pour manipulation -->
+    <iframe id="youtubeIframe" 
+            src="" 
+            frameborder="0" 
+            allow="autoplay" 
+            style="position: absolute; width: 1px; height: 1px; left: -9999px;">
+    </iframe>
+    <div class="yoshibre-profiles">
+      <!-- Profil Kumo (CRXSH) -->
+      <div class="yoshibre-profile">
+        <img src="https://cdn.discordapp.com/attachments/1333073628681474190/1335217111865364512/jpg39.jpg?ex=679f5d56&is=679e0bd6&hm=ed351974e4b525d8ef7cee0a4297f1e298c6a58221c31f78c19ef49a0ce5768b&" alt="Kumo (CRXSH)">
+        <h4>Kumo (CRXSH)</h4>
+        <p><strong>Bio:</strong> Suceur de bite & acteur</p>
+      </div>
+      <!-- Profil Shitano -->
+      <div class="yoshibre-profile">
+        <img src="https://cdn.discordapp.com/avatars/1277725003999219738/e9ba1e0d17ab4de64b4528a04a496288?size=1024" alt="Shitano">
+        <h4>Shitano</h4>
+        <p><strong>Bio:</strong> Veski & Suce l'projet comme Kumo CRXSH mais Shitano mtn quoi</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container" id="about">
+    <h3>HALL OF ABOUT</h3>
+    <div class="scroll-box">
+      <p>Atlas est beau.</p>
+    </div>
+  </div>
+
+  <script>
+    // URL de la musique YouTube avec les paramètres souhaités
+    const youtubeURL = "https://www.youtube.com/embed/Tm5UCnb9axw?autoplay=1&controls=0&loop=1&playlist=Tm5UCnb9axw";
+
+    function showSection(sectionId) {
+      // Cache toutes les sections
+      const sections = document.querySelectorAll('.container');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+      
+      // Récupère l'iframe YouTube
+      const youtubeIframe = document.getElementById('youtubeIframe');
+      
+      // Si on quitte la section Yoshibre, on vide le src pour arrêter la musique
+      if(sectionId !== 'yoshibre' && youtubeIframe) {
+        youtubeIframe.src = "";
+      }
+      
+      // Affiche la section demandée
+      const sectionToShow = document.getElementById(sectionId);
+      if (sectionToShow) {
+        sectionToShow.style.display = 'block';
+      }
+      
+      // Si la section affichée est Yoshibre, on lance la musique en assignant l'URL à l'iframe
+      if(sectionId === 'yoshibre' && youtubeIframe) {
+        youtubeIframe.src = youtubeURL;
+      }
+    }
+    
+    // Affiche la section "home" par défaut au chargement
+    window.onload = function() {
+      showSection('home');
+    };
+  </script>
+</body>
+</html>
